@@ -3,8 +3,8 @@ from datetime import datetime
 
 
 class TTAS_Input(BaseModel):
-    emer_date: datetime = datetime.now()  # 急診日期
-    bir_date: datetime = datetime.now()  # 出生日期
+    emer_date: datetime  # 急診日期
+    bir_date: datetime  # 出生日期
     gender: str  # 性別
     temp: float | None = None  # 體溫
     weight: float | None = None  # 體重
